@@ -9,11 +9,40 @@
         <category display_value="Entity Management">0a6f976cdbe01010a16b5a75dc9619dc</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Imports entities into Google Cloud Datastore.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Project ID&lt;/b&gt; - Unique ID of the project.
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;File Path&lt;/b&gt; - Bucket source file.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Entity Filter&lt;/b&gt; - Entity filter is an object conatining Namespace ID's and Kinds.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Labels&lt;/b&gt; - Groups together resources that are related or associated with each other. An object containing Key and Value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Import&lt;/b&gt; - Object  containing Name, Meta Data, Type, Common, Start Time, Operation Type, State, Entity Filter, Kinds, Name Space IDs, and Input URL.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure in Google Cloud Datastore, Status is set to “Error".&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Invalid Project ID.&lt;/li&gt;
+&lt;li&gt;Google Cloud Storage file does not exist.&lt;/li&gt;
+&lt;li&gt;Requested kinds/namespaces are not available.&lt;/li&gt;
+&lt;li&gt;Invalid authorization header. The access token you're using is either expired or invalid.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+
+&lt;p&gt; To use this action, a corresponding Google Cloud Datastore connection and credential must be created and associated with the Google Cloud Datastore Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>entity_import</internal_name>
         <label_cache>[{"name":"{{action.entity_filter}}","label":"action➛Entity Filter","type":"action","ref":""},{"name":"{{action.entityfilter}}","label":"action➛Entity Filter","type":"action","ref":""},{"name":"{{action.entityfilter.Kinds}}","label":"action➛Entity Filter➛Kinds","type":"action","ref":""},{"name":"{{action.entityfilter.kinds}}","label":"action➛Entity Filter➛Kinds","type":"action","ref":""},{"name":"{{action.entityfilter.kinds.Kind}}","label":"action➛Entity Filter➛Kinds➛Kind","type":"action","ref":""},{"name":"{{action.entityfilter.kinds.kind}}","label":"action➛Entity Filter➛Kinds➛Kind","type":"action","ref":""},{"name":"{{action.entityfilter.Namespace_ID_s}}","label":"action➛Entity Filter➛Namespace ID's","type":"action","ref":""},{"name":"{{action.entityfilter.namespaceIds}}","label":"action➛Entity Filter➛Namespace ID's","type":"action","ref":""},{"name":"{{action.entityfilter.namespaceIds.Namespace_ID}}","label":"action➛Entity Filter➛Namespace ID's➛Namespace ID","type":"action","ref":""},{"name":"{{action.entityfilter.namespaceIds.namespaceId}}","label":"action➛Entity Filter➛Namespace ID's➛Namespace ID","type":"action","ref":""},{"name":"{{action.labels}}","label":"action➛Labels","type":"action","ref":""},{"name":"{{action.labels.Key}}","label":"action➛Labels➛Key","type":"action","ref":""},{"name":"{{action.labels.key}}","label":"action➛Labels➛Key","type":"action","ref":""},{"name":"{{action.labels.Label}}","label":"action➛Labels➛Label","type":"action","ref":""},{"name":"{{action.labels.label}}","label":"action➛Labels➛Label","type":"action","ref":""},{"name":"{{action.labels.label.Key}}","label":"action➛Labels➛Label➛Key","type":"action","ref":""},{"name":"{{action.labels.label.key}}","label":"action➛Labels➛Label➛Key","type":"action","ref":""},{"name":"{{action.labels.label.Value}}","label":"action➛Labels➛Label➛Value","type":"action","ref":""},{"name":"{{action.labels.label.value}}","label":"action➛Labels➛Label➛Value","type":"action","ref":""},{"name":"{{action.bucket_id}}","label":"action➛Bucket ID","type":"action","ref":""},{"name":"{{action.bucket_name}}","label":"action➛Bucket Name","type":"action","ref":""},{"name":"{{action.project_id}}","label":"action➛Project ID","type":"action","ref":""},{"name":"{{action.projectid}}","label":"action➛Project ID","type":"action","ref":""},{"name":"{{action.file_path}}","label":"action➛File Path","type":"action","ref":""},{"name":"{{action.filepath}}","label":"action➛File Path","type":"action","ref":""},{"name":"{{step[b33e88fc-c8d2-4be2-82a4-052319e4fc80].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[b33e88fc-c8d2-4be2-82a4-052319e4fc80].projectid}}","label":"step➛Pre Processing➛ProjectID","type":"step","ref":""},{"name":"{{step[b33e88fc-c8d2-4be2-82a4-052319e4fc80].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":""},{"name":"{{step[04cdb496-ca8c-4953-b49b-e8f4a8c0b0c4].response_body}}","label":"step➛Import Entity➛Response Body","type":"step","ref":""},{"name":"{{step[04cdb496-ca8c-4953-b49b-e8f4a8c0b0c4].status_code}}","label":"step➛Import Entity➛Status Code","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].variable}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].errormessage}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import}}","label":"step➛Post Processing➛Import","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.import_child1}}","label":"step➛Post Processing➛Import➛Import_child1","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.Name}}","label":"step➛Post Processing➛Import➛Name","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.name}}","label":"step➛Post Processing➛Import➛Name","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.import_child2}}","label":"step➛Post Processing➛Import➛Import_child2","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.Metadata}}","label":"step➛Post Processing➛Import➛Metadata","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata}}","label":"step➛Post Processing➛Import➛Meta Data","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.meta_data_child1}}","label":"step➛Post Processing➛Import➛Meta Data➛Meta Data_child1","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.type}}","label":"step➛Post Processing➛Import➛Meta Data➛Type","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.meta_data_child2}}","label":"step➛Post Processing➛Import➛Meta Data➛Meta Data_child2","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.Common}}","label":"step➛Post Processing➛Import➛Meta Data➛Common","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common}}","label":"step➛Post Processing➛Import➛Meta Data➛Common","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.common_child1}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛Common_child1","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.Start_Time}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛Start Time","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.startTime}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛Start Time","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.common_child2}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛Common_child2","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.Operation_Type}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛Operation Type","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.operationType}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛Operation Type","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.common_child3}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛Common_child3","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.State}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛State","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.state}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛State","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.meta_data_child3}}","label":"step➛Post Processing➛Import➛Meta Data➛Meta Data_child3","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.Entity_Filter}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.entity_filter_child1}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Entity Filter_child1","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.Kinds}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Kinds","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.kinds}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Kinds","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.kinds.Kind}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Kinds➛Kind","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.entity_filter_child2}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Entity Filter_child2","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.Name_Space_IDs}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Name Space IDs","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.namespaceIds}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Name Space IDs","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.namespaceIds.Name_Space_ID}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Name Space IDs➛Name Space ID","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.namespaceIds.namespaceId}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Name Space IDs➛Name Space ID","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.meta_data_child4}}","label":"step➛Post Processing➛Import➛Meta Data➛Meta Data_child4","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.Input_URL}}","label":"step➛Post Processing➛Import➛Meta Data➛Input URL","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.inputUrl}}","label":"step➛Post Processing➛Import➛Meta Data➛Input URL","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata._Type}}","label":"step➛Post Processing➛Import➛Meta Data➛@Type","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata._type}}","label":"step➛Post Processing➛Import➛Meta Data➛@Type","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>fd45aaf6dbe05010a16b5a75dc96196e</latest_snapshot>
+        <latest_snapshot>18dc577adba01010a16b5a75dc961919</latest_snapshot>
         <master_snapshot>cd9cfb24db641010a16b5a75dc961916</master_snapshot>
         <name>Entity Import</name>
         <natlang/>
@@ -26,7 +55,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6d767becdb241010a16b5a75dc9619b2</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>Entity Import</sys_name>
         <sys_overrides/>
         <sys_package display_value="Google Cloud Datastore Spoke" source="sn_gcp_cds_spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_package>
@@ -34,7 +63,7 @@
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_6d767becdb241010a16b5a75dc9619b2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:46:28</sys_updated_on>
+        <sys_updated_on>2020-05-07 08:49:08</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1931,7 +1960,7 @@
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_6d767becdb241010a16b5a75dc9619b2</name>
         <next_element/>
-        <order>1</order>
+        <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1949,14 +1978,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-04-30 10:54:48</sys_created_on>
         <sys_id>0276bbecdb241010a16b5a75dc96195b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-05 07:33:34</sys_updated_on>
+        <sys_updated_on>2020-05-07 05:37:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2014,7 +2043,7 @@
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_6d767becdb241010a16b5a75dc9619b2</name>
         <next_element/>
-        <order>2</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -2032,14 +2061,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-04-30 10:54:49</sys_created_on>
         <sys_id>0e76bbecdb241010a16b5a75dc961963</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-05 07:33:34</sys_updated_on>
+        <sys_updated_on>2020-05-07 05:37:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2097,7 +2126,7 @@
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_6d767becdb241010a16b5a75dc9619b2</name>
         <next_element/>
-        <order>3</order>
+        <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -2115,14 +2144,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 11:40:49</sys_created_on>
         <sys_id>b8f03596db281010a16b5a75dc961981</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-05 11:40:49</sys_updated_on>
+        <sys_updated_on>2020-05-07 05:37:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3843,17 +3872,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Entity Import">6d767becdb241010a16b5a75dc9619b2</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"e29c7f24db641010a16b5a75dc961927","name":"plan"}}</plan>
-        <snapshot>fd45aaf6dbe05010a16b5a75dc96196e</snapshot>
+        <snapshot>18dc577adba01010a16b5a75dc961919</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-04-30 11:21:36</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e29c7f24db641010a16b5a75dc961927</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:46:32</sys_updated_on>
+        <sys_updated_on>2020-05-07 08:49:13</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -3864,7 +3893,36 @@
         <category display_value="Entity Management">0a6f976cdbe01010a16b5a75dc9619dc</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Imports entities into Google Cloud Datastore.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Project ID&lt;/b&gt; - Unique ID of the project.
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;File Path&lt;/b&gt; - Bucket source file.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Entity Filter&lt;/b&gt; - Entity filter is an object conatining Namespace ID's and Kinds.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Labels&lt;/b&gt; - Groups together resources that are related or associated with each other. An object containing Key and Value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Import&lt;/b&gt; - Object  containing Name, Meta Data, Type, Common, Start Time, Operation Type, State, Entity Filter, Kinds, Name Space IDs, and Input URL.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure in Google Cloud Datastore, Status is set to “Error".&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Invalid Project ID.&lt;/li&gt;
+&lt;li&gt;Google Cloud Storage file does not exist.&lt;/li&gt;
+&lt;li&gt;Requested kinds/namespaces are not available.&lt;/li&gt;
+&lt;li&gt;Invalid authorization header. The access token you're using is either expired or invalid.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+
+&lt;p&gt; To use this action, a corresponding Google Cloud Datastore connection and credential must be created and associated with the Google Cloud Datastore Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <internal_name>entity_import</internal_name>
         <label_cache>[{"name":"{{action.entity_filter}}","label":"action➛Entity Filter","type":"action","ref":""},{"name":"{{action.entityfilter}}","label":"action➛Entity Filter","type":"action","ref":""},{"name":"{{action.entityfilter.Kinds}}","label":"action➛Entity Filter➛Kinds","type":"action","ref":""},{"name":"{{action.entityfilter.kinds}}","label":"action➛Entity Filter➛Kinds","type":"action","ref":""},{"name":"{{action.entityfilter.kinds.Kind}}","label":"action➛Entity Filter➛Kinds➛Kind","type":"action","ref":""},{"name":"{{action.entityfilter.kinds.kind}}","label":"action➛Entity Filter➛Kinds➛Kind","type":"action","ref":""},{"name":"{{action.entityfilter.Namespace_ID_s}}","label":"action➛Entity Filter➛Namespace ID's","type":"action","ref":""},{"name":"{{action.entityfilter.namespaceIds}}","label":"action➛Entity Filter➛Namespace ID's","type":"action","ref":""},{"name":"{{action.entityfilter.namespaceIds.Namespace_ID}}","label":"action➛Entity Filter➛Namespace ID's➛Namespace ID","type":"action","ref":""},{"name":"{{action.entityfilter.namespaceIds.namespaceId}}","label":"action➛Entity Filter➛Namespace ID's➛Namespace ID","type":"action","ref":""},{"name":"{{action.labels}}","label":"action➛Labels","type":"action","ref":""},{"name":"{{action.labels.Key}}","label":"action➛Labels➛Key","type":"action","ref":""},{"name":"{{action.labels.key}}","label":"action➛Labels➛Key","type":"action","ref":""},{"name":"{{action.labels.Label}}","label":"action➛Labels➛Label","type":"action","ref":""},{"name":"{{action.labels.label}}","label":"action➛Labels➛Label","type":"action","ref":""},{"name":"{{action.labels.label.Key}}","label":"action➛Labels➛Label➛Key","type":"action","ref":""},{"name":"{{action.labels.label.key}}","label":"action➛Labels➛Label➛Key","type":"action","ref":""},{"name":"{{action.labels.label.Value}}","label":"action➛Labels➛Label➛Value","type":"action","ref":""},{"name":"{{action.labels.label.value}}","label":"action➛Labels➛Label➛Value","type":"action","ref":""},{"name":"{{action.bucket_id}}","label":"action➛Bucket ID","type":"action","ref":""},{"name":"{{action.bucket_name}}","label":"action➛Bucket Name","type":"action","ref":""},{"name":"{{action.project_id}}","label":"action➛Project ID","type":"action","ref":""},{"name":"{{action.projectid}}","label":"action➛Project ID","type":"action","ref":""},{"name":"{{action.file_path}}","label":"action➛File Path","type":"action","ref":""},{"name":"{{action.filepath}}","label":"action➛File Path","type":"action","ref":""},{"name":"{{step[b33e88fc-c8d2-4be2-82a4-052319e4fc80].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[b33e88fc-c8d2-4be2-82a4-052319e4fc80].projectid}}","label":"step➛Pre Processing➛ProjectID","type":"step","ref":""},{"name":"{{step[b33e88fc-c8d2-4be2-82a4-052319e4fc80].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":""},{"name":"{{step[04cdb496-ca8c-4953-b49b-e8f4a8c0b0c4].response_body}}","label":"step➛Import Entity➛Response Body","type":"step","ref":""},{"name":"{{step[04cdb496-ca8c-4953-b49b-e8f4a8c0b0c4].status_code}}","label":"step➛Import Entity➛Status Code","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].variable}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].errormessage}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import}}","label":"step➛Post Processing➛Import","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.import_child1}}","label":"step➛Post Processing➛Import➛Import_child1","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.Name}}","label":"step➛Post Processing➛Import➛Name","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.name}}","label":"step➛Post Processing➛Import➛Name","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.import_child2}}","label":"step➛Post Processing➛Import➛Import_child2","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.Metadata}}","label":"step➛Post Processing➛Import➛Metadata","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata}}","label":"step➛Post Processing➛Import➛Meta Data","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.meta_data_child1}}","label":"step➛Post Processing➛Import➛Meta Data➛Meta Data_child1","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.type}}","label":"step➛Post Processing➛Import➛Meta Data➛Type","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.meta_data_child2}}","label":"step➛Post Processing➛Import➛Meta Data➛Meta Data_child2","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.Common}}","label":"step➛Post Processing➛Import➛Meta Data➛Common","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common}}","label":"step➛Post Processing➛Import➛Meta Data➛Common","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.common_child1}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛Common_child1","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.Start_Time}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛Start Time","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.startTime}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛Start Time","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.common_child2}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛Common_child2","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.Operation_Type}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛Operation Type","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.operationType}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛Operation Type","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.common_child3}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛Common_child3","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.State}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛State","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.common.state}}","label":"step➛Post Processing➛Import➛Meta Data➛Common➛State","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.meta_data_child3}}","label":"step➛Post Processing➛Import➛Meta Data➛Meta Data_child3","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.Entity_Filter}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.entity_filter_child1}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Entity Filter_child1","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.Kinds}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Kinds","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.kinds}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Kinds","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.kinds.Kind}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Kinds➛Kind","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.entity_filter_child2}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Entity Filter_child2","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.Name_Space_IDs}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Name Space IDs","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.namespaceIds}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Name Space IDs","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.namespaceIds.Name_Space_ID}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Name Space IDs➛Name Space ID","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.entityFilter.namespaceIds.namespaceId}}","label":"step➛Post Processing➛Import➛Meta Data➛Entity Filter➛Name Space IDs➛Name Space ID","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.meta_data_child4}}","label":"step➛Post Processing➛Import➛Meta Data➛Meta Data_child4","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.Input_URL}}","label":"step➛Post Processing➛Import➛Meta Data➛Input URL","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata.inputUrl}}","label":"step➛Post Processing➛Import➛Meta Data➛Input URL","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata._Type}}","label":"step➛Post Processing➛Import➛Meta Data➛@Type","type":"step","ref":""},{"name":"{{step[bfc6234a-55eb-4118-b218-f5bcf3c4303c].import.metadata._type}}","label":"step➛Post Processing➛Import➛Meta Data➛@Type","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -3879,7 +3937,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cd9cfb24db641010a16b5a75dc961916</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3887,7 +3945,7 @@
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-05 11:41:45</sys_updated_on>
+        <sys_updated_on>2020-05-07 05:37:31</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -5161,7 +5219,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FDae45eaf6b0e05010001f66c613fa5e70,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=4365904c-186a-4cd3-b4da-19755c388b98</attributes>
+        <attributes>co_type_name=FD19dc977ae4a01010e9a32503ba5bcf80,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=4365904c-186a-4cd3-b4da-19755c388b98</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5219,14 +5277,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 11:41:46</sys_created_on>
         <sys_id>6221b996db281010a16b5a75dc9619f9</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:46:28</sys_updated_on>
+        <sys_updated_on>2020-05-07 08:49:08</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5567,7 +5625,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=Label,child_name=label,child_type=object,child_type_label=Object,child_uiUniqueId=bdce1fa0-6620-467f-9491-ca61614e45bd,co_type_name=FDda45eaf654e05010219e9d82a9127723,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=45468b47-3c61-4e46-b633-64e160188406</attributes>
+        <attributes>child_label=Label,child_name=label,child_type=object,child_type_label=Object,child_uiUniqueId=bdce1fa0-6620-467f-9491-ca61614e45bd,co_type_name=FD41dc977a2ea01010a4c7b0f32792a81a,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=45468b47-3c61-4e46-b633-64e160188406</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5625,14 +5683,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-04-30 11:21:31</sys_created_on>
         <sys_id>599cfb24db641010a16b5a75dc96196c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:46:27</sys_updated_on>
+        <sys_updated_on>2020-05-07 08:49:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5648,7 +5706,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FD5e45eaf6afe05010f6c719bdf88eaf21,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=bbdca11b-d04a-48d9-8f9f-408a1134fafe</attributes>
+        <attributes>co_type_name=FD05dc977a4da0101041dcebd3b3c6c718,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=bbdca11b-d04a-48d9-8f9f-408a1134fafe</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5706,14 +5764,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-04-30 11:21:31</sys_created_on>
         <sys_id>899cfb24db641010a16b5a75dc961966</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:46:27</sys_updated_on>
+        <sys_updated_on>2020-05-07 08:49:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5772,7 +5830,7 @@
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_cd9cfb24db641010a16b5a75dc961916</name>
         <next_element/>
-        <order>2</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -5790,14 +5848,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-04-30 11:21:33</sys_created_on>
         <sys_id>659c3f24db641010a16b5a75dc96193f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-04-30 11:21:33</sys_updated_on>
+        <sys_updated_on>2020-05-07 05:37:32</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5855,7 +5913,7 @@
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_cd9cfb24db641010a16b5a75dc961916</name>
         <next_element/>
-        <order>1</order>
+        <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -5873,14 +5931,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-04-30 11:21:33</sys_created_on>
         <sys_id>a99c3f24db641010a16b5a75dc961936</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-04-30 11:21:33</sys_updated_on>
+        <sys_updated_on>2020-05-07 05:37:32</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5896,7 +5954,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FDb245eaf680e05010848a038fd745f98f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=bfc6234a-55eb-4118-b218-f5bcf3c4303c,sourceType=step,sourceUiUniqueId=4365904c-186a-4cd3-b4da-19755c388b98,uiType=object,uiTypeLabel=Object,uiUniqueId=75cfd1e0-b25a-4dcc-9e0c-0af2088c4580</attributes>
+        <attributes>co_type_name=FD11dc977a2ca010101e7cfdfec35e4b92,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=bfc6234a-55eb-4118-b218-f5bcf3c4303c,sourceType=step,sourceUiUniqueId=4365904c-186a-4cd3-b4da-19755c388b98,uiType=object,uiTypeLabel=Object,uiUniqueId=75cfd1e0-b25a-4dcc-9e0c-0af2088c4580</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5938,7 +5996,7 @@
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_cd9cfb24db641010a16b5a75dc961916</name>
         <next_element/>
-        <order>3</order>
+        <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -5956,14 +6014,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 11:41:46</sys_created_on>
         <sys_id>b221f996db281010a16b5a75dc961915</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:46:28</sys_updated_on>
+        <sys_updated_on>2020-05-07 08:49:08</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -7206,7 +7264,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FDae45eaf6b0e05010001f66c613fa5e70,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=4365904c-186a-4cd3-b4da-19755c388b98</attributes>
+        <attributes>co_type_name=FD19dc977ae4a01010e9a32503ba5bcf80,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=4365904c-186a-4cd3-b4da-19755c388b98</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -7264,14 +7322,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 11:41:46</sys_created_on>
         <sys_id>6221b996db281010a16b5a75dc9619f9</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:46:28</sys_updated_on>
+        <sys_updated_on>2020-05-07 08:49:08</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

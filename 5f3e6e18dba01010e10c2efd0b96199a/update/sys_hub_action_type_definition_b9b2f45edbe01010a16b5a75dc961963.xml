@@ -9,11 +9,33 @@
         <category display_value="Operation Management">e6a338dedbe01010a16b5a75dc9619c6</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Starts asynchronous cancellation on a long-running operation.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Name&lt;/b&gt; - Name of the operation resource.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure in Google Cloud Datastore, Status is set to “Error".&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Operation does not exist.&lt;/li&gt;
+&lt;li&gt;Invalid authorization header. The access token you're using is either expired or invalid.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+
+&lt;p&gt; To use this action, a corresponding Google Cloud Datastore connection and credential must be created and associated with the Google Cloud Datastore Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>cancel_operation</internal_name>
         <label_cache>[{"name":"{{action.name}}","label":"action➛Name","type":"action","ref":""},{"name":"{{action.operation}}","label":"action➛Operation","type":"action","ref":""},{"name":"{{action.operation_id}}","label":"action➛Operation ID","type":"action","ref":""},{"name":"{{action.project_id}}","label":"action➛Project ID","type":"action","ref":""},{"name":"{{step[8c01239f-1875-47c4-80af-20f4b3045ec6].operationid}}","label":"step➛Pre Processing➛operationid","type":"step","ref":""},{"name":"{{step[8c01239f-1875-47c4-80af-20f4b3045ec6].name}}","label":"step➛Pre Processing➛name","type":"step","ref":""},{"name":"{{step[982f9854-2405-4dd6-a325-f76f3d50744f].status_code}}","label":"step➛Cancel Operation➛Status Code","type":"step","ref":""},{"name":"{{step[982f9854-2405-4dd6-a325-f76f3d50744f].response_body}}","label":"step➛Cancel Operation➛Response Body","type":"step","ref":""},{"name":"{{step[5ac39bbc-4ec7-460e-8598-47eb9ecc0806].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[5ac39bbc-4ec7-460e-8598-47eb9ecc0806].variable1}}","label":"step➛Post Processing➛variable1","type":"step","ref":""},{"name":"{{step[5ac39bbc-4ec7-460e-8598-47eb9ecc0806].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[5ac39bbc-4ec7-460e-8598-47eb9ecc0806].errormessage}}","label":"step➛Post Processing➛ErrorMessage","type":"step","ref":""},{"name":"{{step[8c01239f-1875-47c4-80af-20f4b3045ec6].projectid}}","label":"step➛Pre Processing➛projectid","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>a5533c9edbe01010a16b5a75dc96192a</latest_snapshot>
+        <latest_snapshot>202ab672dba45010a16b5a75dc9619b0</latest_snapshot>
         <master_snapshot>f1533c9edbe01010a16b5a75dc9619b9</master_snapshot>
         <name>Cancel Operation</name>
         <natlang/>
@@ -26,7 +48,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b9b2f45edbe01010a16b5a75dc961963</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Cancel Operation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Google Cloud Datastore Spoke" source="sn_gcp_cds_spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_package>
@@ -34,7 +56,7 @@
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_b9b2f45edbe01010a16b5a75dc961963</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-05 07:33:36</sys_updated_on>
+        <sys_updated_on>2020-05-07 06:17:34</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -2481,17 +2503,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Cancel Operation">b9b2f45edbe01010a16b5a75dc961963</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"4b53bc9edbe01010a16b5a75dc96192c","name":"plan"}}</plan>
-        <snapshot>a5533c9edbe01010a16b5a75dc96192a</snapshot>
+        <snapshot>202ab672dba45010a16b5a75dc9619b0</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 07:11:44</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4b53bc9edbe01010a16b5a75dc96192c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-05 07:11:44</sys_updated_on>
+        <sys_updated_on>2020-05-07 06:17:37</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2499,10 +2521,32 @@
         <action_template/>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Operation Management">e6a338dedbe01010a16b5a75dc9619c6</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Starts asynchronous cancellation on a long-running operation.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Name&lt;/b&gt; - Name of the operation resource.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure in Google Cloud Datastore, Status is set to “Error".&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Operation does not exist.&lt;/li&gt;
+&lt;li&gt;Invalid authorization header. The access token you're using is either expired or invalid.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+
+&lt;p&gt; To use this action, a corresponding Google Cloud Datastore connection and credential must be created and associated with the Google Cloud Datastore Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <internal_name>cancel_operation</internal_name>
         <label_cache>[{"name":"{{action.name}}","label":"action➛Name","type":"action","ref":""},{"name":"{{action.operation}}","label":"action➛Operation","type":"action","ref":""},{"name":"{{action.operation_id}}","label":"action➛Operation ID","type":"action","ref":""},{"name":"{{action.project_id}}","label":"action➛Project ID","type":"action","ref":""},{"name":"{{step[8c01239f-1875-47c4-80af-20f4b3045ec6].operationid}}","label":"step➛Pre Processing➛operationid","type":"step","ref":""},{"name":"{{step[8c01239f-1875-47c4-80af-20f4b3045ec6].name}}","label":"step➛Pre Processing➛name","type":"step","ref":""},{"name":"{{step[982f9854-2405-4dd6-a325-f76f3d50744f].status_code}}","label":"step➛Cancel Operation➛Status Code","type":"step","ref":""},{"name":"{{step[982f9854-2405-4dd6-a325-f76f3d50744f].response_body}}","label":"step➛Cancel Operation➛Response Body","type":"step","ref":""},{"name":"{{step[5ac39bbc-4ec7-460e-8598-47eb9ecc0806].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[5ac39bbc-4ec7-460e-8598-47eb9ecc0806].variable1}}","label":"step➛Post Processing➛variable1","type":"step","ref":""},{"name":"{{step[5ac39bbc-4ec7-460e-8598-47eb9ecc0806].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[5ac39bbc-4ec7-460e-8598-47eb9ecc0806].errormessage}}","label":"step➛Post Processing➛ErrorMessage","type":"step","ref":""},{"name":"{{step[8c01239f-1875-47c4-80af-20f4b3045ec6].projectid}}","label":"step➛Pre Processing➛projectid","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -2517,15 +2561,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f1533c9edbe01010a16b5a75dc9619b9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-05 07:11:39</sys_updated_on>
+        <sys_updated_on>2020-05-07 06:17:33</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>

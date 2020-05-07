@@ -38,7 +38,7 @@
         <ih_action>true</ih_action>
         <internal_name>delete_index</internal_name>
         <label_cache>[{"name":"{{action.project_id}}","label":"action➛Project ID","type":"action","ref":""},{"name":"{{action.index_id}}","label":"action➛Index ID","type":"action","ref":""},{"name":"{{step[482427d2-0fa1-46f1-99c6-fc50d1fda579].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[482427d2-0fa1-46f1-99c6-fc50d1fda579].variable1}}","label":"step➛Pre Processing➛variable1","type":"step","ref":""},{"name":"{{step[482427d2-0fa1-46f1-99c6-fc50d1fda579].projectid}}","label":"step➛Pre Processing➛projectid","type":"step","ref":""},{"name":"{{step[482427d2-0fa1-46f1-99c6-fc50d1fda579].indexid}}","label":"step➛Pre Processing➛indexid","type":"step","ref":""},{"name":"{{step[450a7269-eb7a-40cb-9873-c5d8af75ae57].status_code}}","label":"step➛Delete Index➛Status Code","type":"step","ref":""},{"name":"{{step[450a7269-eb7a-40cb-9873-c5d8af75ae57].response_body}}","label":"step➛Delete Index➛Response Body","type":"step","ref":""},{"name":"{{step[769f78b7-90bc-43b4-9c4b-13ffdc6d1d19].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[769f78b7-90bc-43b4-9c4b-13ffdc6d1d19].variable1}}","label":"step➛Post Processing➛variable1","type":"step","ref":""},{"name":"{{step[769f78b7-90bc-43b4-9c4b-13ffdc6d1d19].errormessage}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>44789a3edba05010a16b5a75dc9619be</latest_snapshot>
+        <latest_snapshot>b712b2f6db645010a16b5a75dc961915</latest_snapshot>
         <master_snapshot>1b910478db641010a16b5a75dc9619d8</master_snapshot>
         <name>Delete Index</name>
         <natlang/>
@@ -51,7 +51,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2b29bf60db641010a16b5a75dc9619ec</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Delete Index</sys_name>
         <sys_overrides/>
         <sys_package display_value="Google Cloud Datastore Spoke" source="sn_gcp_cds_spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_package>
@@ -59,7 +59,7 @@
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_2b29bf60db641010a16b5a75dc9619ec</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 03:50:21</sys_updated_on>
+        <sys_updated_on>2020-05-07 05:42:35</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -2956,17 +2956,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Delete Index">2b29bf60db641010a16b5a75dc9619ec</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"10a18478db641010a16b5a75dc96195d","name":"plan"}}</plan>
-        <snapshot>44789a3edba05010a16b5a75dc9619be</snapshot>
+        <snapshot>b712b2f6db645010a16b5a75dc961915</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-04-30 11:43:35</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>10a18478db641010a16b5a75dc96195d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 03:50:25</sys_updated_on>
+        <sys_updated_on>2020-05-07 05:42:38</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>

@@ -54,26 +54,27 @@ GCloudDatastoreErrorHandler.prototype = {
                 outputs.errormessage = "Bucket does not exist in same location.";
             else if (errorMessage.indexOf('Invalid Google Cloud Storage bucket') != -1)
                 outputs.errormessage = "Invalid bucket name.";
-			else if(errorMessage.indexOf('The requested kinds/namespaces are not available') != -1 )
-				outputs.errormessage = "Requested kinds/namespaces are not available.";
+            else if (errorMessage.indexOf('The requested kinds/namespaces are not available') != -1)
+                outputs.errormessage = "Requested kinds/namespaces are not available.";
         }
         if (!outputs.errormessage)
             outputs.errormessage = errorMessage;
         return outputs;
-	},
+    },
     type: 'GCloudDatastoreErrorHandler'
-};]]></script>
+};
+]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-04-30 10:47:16</sys_created_on>
         <sys_id>a144bf6cdb241010a16b5a75dc9619df</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>GCloudDatastoreErrorHandler</sys_name>
         <sys_package display_value="Google Cloud Datastore Spoke" source="sn_gcp_cds_spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name>sys_script_include_a144bf6cdb241010a16b5a75dc9619df</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-06 11:45:44</sys_updated_on>
+        <sys_updated_on>2020-05-07 06:18:21</sys_updated_on>
     </sys_script_include>
 </record_update>

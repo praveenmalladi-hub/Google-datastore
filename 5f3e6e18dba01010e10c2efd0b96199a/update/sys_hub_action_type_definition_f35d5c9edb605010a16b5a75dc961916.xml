@@ -9,11 +9,24 @@
         <category display_value="Operation Management">e6a338dedbe01010a16b5a75dc9619c6</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Retrieves the list of operations that match the specified filter in the request.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Project ID&lt;/b&gt; - Unique ID of the project.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Filter&lt;/b&gt; - Filter the outputs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Operation&lt;ul&gt;&lt;li&gt;Name&lt;/li&gt;&lt;/ul&gt;&lt;/strong&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; To use this action, a corresponding Google Cloud Datastore connection and credential must be created and associated with the Google Cloud Datastore Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <ih_action>true</ih_action>
         <internal_name>fetch_operations</internal_name>
         <label_cache>[{"name":"{{action.project_id}}","label":"action➛Project ID","type":"action","ref":""},{"name":"{{action.filter}}","label":"action➛Filter","type":"action","ref":""},{"name":"{{step[65f4a79e-aaed-4844-a024-a60de48006bf].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[65f4a79e-aaed-4844-a024-a60de48006bf].variable1}}","label":"step➛Pre Processing➛variable1","type":"step","ref":""},{"name":"{{step[65f4a79e-aaed-4844-a024-a60de48006bf].projectid}}","label":"step➛Pre Processing➛ProjectID","type":"step","ref":""},{"name":"{{step[65f4a79e-aaed-4844-a024-a60de48006bf].filter}}","label":"step➛Pre Processing➛Filter","type":"step","ref":""},{"name":"{{step[cd28dbc5-c382-42d2-b03d-d53f0b06fdc5].pageToken}}","label":"step➛Pagination Setup➛pageToken","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>88276ebadbe05010a16b5a75dc9619ed</latest_snapshot>
+        <latest_snapshot>18390732dbe45010a16b5a75dc961932</latest_snapshot>
         <master_snapshot>47b7ac1adba01010a16b5a75dc961952</master_snapshot>
         <name>Look up Operation</name>
         <natlang/>
@@ -26,7 +39,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f35d5c9edb605010a16b5a75dc961916</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name>Look up Operation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Google Cloud Datastore Spoke" source="sn_gcp_cds_spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_package>
@@ -34,7 +47,7 @@
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_f35d5c9edb605010a16b5a75dc961916</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:54:34</sys_updated_on>
+        <sys_updated_on>2020-05-07 07:23:25</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1692,14 +1705,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 06:18:59</sys_created_on>
         <sys_id>1247e8d6dba01010a16b5a75dc9619c1</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:54:24</sys_updated_on>
+        <sys_updated_on>2020-05-07 07:23:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1858,14 +1871,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 06:18:59</sys_created_on>
         <sys_id>1647e8d6dba01010a16b5a75dc9619d1</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:54:24</sys_updated_on>
+        <sys_updated_on>2020-05-07 07:23:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2107,14 +2120,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 06:18:59</sys_created_on>
         <sys_id>5e47e8d6dba01010a16b5a75dc9619cb</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:54:24</sys_updated_on>
+        <sys_updated_on>2020-05-07 07:23:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2273,14 +2286,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 06:18:59</sys_created_on>
         <sys_id>9247e8d6dba01010a16b5a75dc9619e3</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:54:24</sys_updated_on>
+        <sys_updated_on>2020-05-07 07:23:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2439,14 +2452,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 06:18:59</sys_created_on>
         <sys_id>d647e8d6dba01010a16b5a75dc9619c6</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:54:24</sys_updated_on>
+        <sys_updated_on>2020-05-07 07:23:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4123,17 +4136,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Look up Operation">f35d5c9edb605010a16b5a75dc961916</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"55c7a05adba01010a16b5a75dc96191a","name":"plan"}}</plan>
-        <snapshot>88276ebadbe05010a16b5a75dc9619ed</snapshot>
+        <snapshot>18390732dbe45010a16b5a75dc961932</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 06:21:05</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>55c7a05adba01010a16b5a75dc96191a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:54:38</sys_updated_on>
+        <sys_updated_on>2020-05-07 07:23:30</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -4144,7 +4157,20 @@
         <category display_value="Operation Management">e6a338dedbe01010a16b5a75dc9619c6</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;Retrieves the list of operations that match the specified filter in the request.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Project ID&lt;/b&gt; - Unique ID of the project.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Filter&lt;/b&gt; - Filter the outputs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Operation&lt;ul&gt;&lt;li&gt;Name&lt;/li&gt;&lt;/ul&gt;&lt;/strong&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; To use this action, a corresponding Google Cloud Datastore connection and credential must be created and associated with the Google Cloud Datastore Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <internal_name>look_up_operations</internal_name>
         <label_cache>[{"name":"{{action.project_id}}","label":"action➛Project ID","type":"action","ref":""},{"name":"{{action.filter}}","label":"action➛Filter","type":"action","ref":""},{"name":"{{step[65f4a79e-aaed-4844-a024-a60de48006bf].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[65f4a79e-aaed-4844-a024-a60de48006bf].variable1}}","label":"step➛Pre Processing➛variable1","type":"step","ref":""},{"name":"{{step[65f4a79e-aaed-4844-a024-a60de48006bf].projectid}}","label":"step➛Pre Processing➛ProjectID","type":"step","ref":""},{"name":"{{step[65f4a79e-aaed-4844-a024-a60de48006bf].filter}}","label":"step➛Pre Processing➛Filter","type":"step","ref":""},{"name":"{{step[cd28dbc5-c382-42d2-b03d-d53f0b06fdc5].pageToken}}","label":"step➛Pagination Setup➛pageToken","type":"step","ref":""}]</label_cache>
         <master>true</master>
@@ -4159,7 +4185,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>47b7ac1adba01010a16b5a75dc961952</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -4167,7 +4193,7 @@
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:54:32</sys_updated_on>
+        <sys_updated_on>2020-05-07 07:23:23</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -4209,10 +4235,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 06:21:00</sys_created_on>
         <sys_id>7fb7ec1adba01010a16b5a75dc9619a0</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:54:33</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD4127eeba4ae05010f7850edc00925597":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FD4127eeba4ae05010f7850edc00925597.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD4127eeba4ae05010f7850edc00925597\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Operation\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"uiUniqueId\":\"a9365340-af8b-4c2a-87d7-de46815e93e1\"}"}},"complexObject":{"name":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2020-05-07 07:23:25</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDe1394732e9e4501050527b559d9844f3":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FDe1394732e9e4501050527b559d9844f3.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe1394732e9e4501050527b559d9844f3\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Operation\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"uiUniqueId\":\"a9365340-af8b-4c2a-87d7-de46815e93e1\"}"}},"complexObject":{"name":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
         <variable display_value="">63b7ac1adba01010a16b5a75dc9619c8</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5929,14 +5955,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 06:20:59</sys_created_on>
         <sys_id>2bb7ec1adba01010a16b5a75dc961907</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:54:33</sys_updated_on>
+        <sys_updated_on>2020-05-07 07:23:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -6012,14 +6038,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 06:20:59</sys_created_on>
         <sys_id>37b7ec1adba01010a16b5a75dc961942</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:54:33</sys_updated_on>
+        <sys_updated_on>2020-05-07 07:23:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -6095,14 +6121,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 06:20:59</sys_created_on>
         <sys_id>3bb7ec1adba01010a16b5a75dc96191e</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:54:33</sys_updated_on>
+        <sys_updated_on>2020-05-07 07:23:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -6118,7 +6144,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FD4127eeba4ae05010f7850edc00925597,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=a9365340-af8b-4c2a-87d7-de46815e93e1</attributes>
+        <attributes>co_type_name=FDe1394732e9e4501050527b559d9844f3,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=a9365340-af8b-4c2a-87d7-de46815e93e1</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -6178,14 +6204,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 06:20:58</sys_created_on>
         <sys_id>63b7ac1adba01010a16b5a75dc9619c8</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:54:33</sys_updated_on>
+        <sys_updated_on>2020-05-07 07:23:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -6427,14 +6453,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 06:20:59</sys_created_on>
         <sys_id>bbb7ec1adba01010a16b5a75dc96190c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:54:33</sys_updated_on>
+        <sys_updated_on>2020-05-07 07:23:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -6759,14 +6785,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-05 06:20:59</sys_created_on>
         <sys_id>ffb7ec1adba01010a16b5a75dc961923</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-07 04:54:33</sys_updated_on>
+        <sys_updated_on>2020-05-07 07:23:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
