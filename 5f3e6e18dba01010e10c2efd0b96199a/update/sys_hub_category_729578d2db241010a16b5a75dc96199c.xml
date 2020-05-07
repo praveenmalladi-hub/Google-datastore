@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_category">
+    <sys_hub_category action="INSERT_OR_UPDATE">
+        <name>Index Management</name>
+        <order>100</order>
+        <sys_class_name>sys_hub_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-05 07:21:45</sys_created_on>
+        <sys_id>729578d2db241010a16b5a75dc96199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Index Management</sys_name>
+        <sys_package display_value="Google Cloud Datastore Spoke" source="sn_gcp_cds_spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
+        <sys_update_name>sys_hub_category_729578d2db241010a16b5a75dc96199c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-05 07:21:45</sys_updated_on>
+    </sys_hub_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=729578d2db241010a16b5a75dc96199c"/>
+</record_update>

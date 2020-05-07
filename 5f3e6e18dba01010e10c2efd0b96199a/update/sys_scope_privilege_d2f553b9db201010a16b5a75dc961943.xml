@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2020-05-04 05:45:14</sys_created_on>
+        <sys_id>d2f553b9db201010a16b5a75dc961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ScriptableDataStream.hasNext</sys_name>
+        <sys_package display_value="Google Cloud Datastore Spoke" source="sn_gcp_cds_spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
+        <sys_update_name>sys_scope_privilege_d2f553b9db201010a16b5a75dc961943</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-05-04 05:45:14</sys_updated_on>
+        <target_name>ScriptableDataStream.hasNext</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>

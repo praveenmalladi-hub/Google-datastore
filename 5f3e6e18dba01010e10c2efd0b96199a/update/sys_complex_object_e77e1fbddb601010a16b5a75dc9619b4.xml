@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD277e1fbd7a60101073f7b8c2297178b4</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>5f3e6e18dba01010e10c2efd0b96199a</scope_name>
+        <serialized_content>{"FlowDesigner:FD277e1fbd7a60101073f7b8c2297178b4":{"$COCollectionField":[{"property":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"direction":"String","direction.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Direction\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"32\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Descending\":\"{\\\"label\\\":\\\"Descending\\\",\\\"value\\\":\\\"DESCENDING\\\",\\\"order\\\":3}\",\"Direction Unspecified\":\"{\\\"label\\\":\\\"Direction Unspecified\\\",\\\"value\\\":\\\"DIRECTION_UNSPECIFIED\\\",\\\"order\\\":1}\",\"Ascending\":\"{\\\"label\\\":\\\"Ascending\\\",\\\"value\\\":\\\"ASCENDING\\\",\\\"order\\\":2}\"}}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Properties\",\"mandatory\":\"false\",\"child_name\":\"property\",\"uiUniqueId\":\"aefd3e00-a1f5-4c63-bc74-f84eab8d611a\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD277e1fbd7a60101073f7b8c2297178b4\",\"child_label\":\"Property\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"3130f790-4972-4b59-84a2-7a3a897ead2d\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD277e1fbd7a60101073f7b8c2297178b4.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Properties\",\"mandatory\":\"false\",\"child_name\":\"property\",\"uiUniqueId\":\"aefd3e00-a1f5-4c63-bc74-f84eab8d611a\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD277e1fbd7a60101073f7b8c2297178b4\",\"child_label\":\"Property\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"3130f790-4972-4b59-84a2-7a3a897ead2d\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-04 06:22:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e77e1fbddb601010a16b5a75dc9619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD277e1fbd7a60101073f7b8c2297178b4</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Google Cloud Datastore Spoke" source="sn_gcp_cds_spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
+        <sys_update_name>sys_complex_object_e77e1fbddb601010a16b5a75dc9619b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-04 06:22:27</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

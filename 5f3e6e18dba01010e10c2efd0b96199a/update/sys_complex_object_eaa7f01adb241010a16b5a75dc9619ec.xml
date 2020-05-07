@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD2aa7f01a01241010d3d2d9c5d2a4fcec</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>5f3e6e18dba01010e10c2efd0b96199a</scope_name>
+        <serialized_content>{"FlowDesigner:FD2aa7f01a01241010d3d2d9c5d2a4fcec":{"indexId":"String","indexId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"label\":\"ID\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FD2aa7f01a01241010d3d2d9c5d2a4fcec.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Index\",\"mandatory\":\"false\",\"uiUniqueId\":\"05a331dc-ff2a-45e2-a707-80280f5e4687\",\"uiTypeLabel\":\"\",\"co_type_name\":\"FD2aa7f01a01241010d3d2d9c5d2a4fcec\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"12\",\"max_length\":\"0\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-05 07:30:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eaa7f01adb241010a16b5a75dc9619ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD2aa7f01a01241010d3d2d9c5d2a4fcec</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Google Cloud Datastore Spoke" source="sn_gcp_cds_spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
+        <sys_update_name>sys_complex_object_eaa7f01adb241010a16b5a75dc9619ec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-05 07:30:32</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

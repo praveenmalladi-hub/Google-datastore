@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDe7656662baa41010b53d9679d8d5ccb3</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>5f3e6e18dba01010e10c2efd0b96199a</scope_name>
+        <serialized_content>{"FlowDesigner:FDe7656662baa41010b53d9679d8d5ccb3":{"namespaceIds":["Any"],"namespaceIds.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Namespace ID's\",\"mandatory\":\"false\",\"child_name\":\"namespaceId\",\"uiTypeLabel\":\"Any\",\"child_label\":\"Namespace ID\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"3a22eaa3-b625-4e81-9e31-1793d232953c\"}"},"kinds":["Any"],"kinds.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Kinds\",\"mandatory\":\"false\",\"child_name\":\"kind\",\"uiTypeLabel\":\"Any\",\"child_label\":\"Kind\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"1eaddef5-cccd-479a-96ea-23e0185959b6\"}"}},"FlowDesigner:FDe7656662baa41010b53d9679d8d5ccb3.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe7656662baa41010b53d9679d8d5ccb3\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Entity Filter\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"65000\",\"uiUniqueId\":\"bbdca11b-d04a-48d9-8f9f-408a1134fafe\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-06 10:08:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ab656662dba41010a16b5a75dc9619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDe7656662baa41010b53d9679d8d5ccb3</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Google Cloud Datastore Spoke" source="sn_gcp_cds_spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
+        <sys_update_name>sys_complex_object_ab656662dba41010a16b5a75dc9619b3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-06 10:08:35</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

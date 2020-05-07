@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app">
+    <sys_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <can_edit_in_studio>false</can_edit_in_studio>
+        <enforce_license>log</enforce_license>
+        <guided_setup_guid/>
+        <js_level>helsinki_es5</js_level>
+        <licensable>true</licensable>
+        <license_category>none</license_category>
+        <license_definition/>
+        <license_model>none</license_model>
+        <logo>0ac1fda2dba01010a16b5a75dc96195b</logo>
+        <menu/>
+        <name>Google Cloud Datastore Spoke</name>
+        <private>false</private>
+        <restrict_table_access>false</restrict_table_access>
+        <runtime_access_tracking>permissive</runtime_access_tracking>
+        <scope>sn_gcp_cds_spoke</scope>
+        <scoped_administration>false</scoped_administration>
+        <short_description/>
+        <source>sn_gcp_cds_spoke</source>
+        <store_correlation_id/>
+        <store_url/>
+        <sys_class_name>sys_app</sys_class_name>
+        <sys_code/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-29 11:00:45</sys_created_on>
+        <sys_id>5f3e6e18dba01010e10c2efd0b96199a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-06 06:22:56</sys_updated_on>
+        <template/>
+        <trackable>true</trackable>
+        <user_role/>
+        <vendor/>
+        <vendor_prefix/>
+        <version>1.0.0</version>
+    </sys_app>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <file_name>logo</file_name>
+        <hash>536ab9da73f49e0c3120773b11679d1f0754fd084b830e3ec98444271a70ee4b</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>1920</size_bytes>
+        <size_compressed>756</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-06 06:22:56</sys_created_on>
+        <sys_id>0ac1fda2dba01010a16b5a75dc96195b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-05-06 06:22:57</sys_updated_on>
+        <table_name>ZZ_YYsys_app</table_name>
+        <table_sys_id>5f3e6e18dba01010e10c2efd0b96199a</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="logo" sys_id="0ac1fda2dba01010a16b5a75dc96195b">0ac1fda2dba01010a16b5a75dc96195b</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-06 06:22:56</sys_created_on>
+        <sys_id>4ac1fda2dba01010a16b5a75dc96195b</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>tZVba9swFICfk1+heU8DSZYl+dqmZS1rV0hhMOjrSB01NvXsYDtO0rL/vnNk15T1BoMY33Sun845To5Pd78L0pm6yaty5nhcOMSUabXMy9XM2bR3LHJOT6bHnxgjl6Y09aKt6oR8XVa3hlwVxaZprYhIzT0uKfl5c0m+7dZV3ZIfxWbFrkrCrfCmz5GQgAtBzjZ5sSTiCyGMQfimWz2H8BySL2fOfLE39S/pEGAsm5mTte06cd3tdsu3ilf1ypVCCBecB5NkV+Tl/WuGXhzHrtWC6cwR651D9v1zOiHbfNlmMyfQKM5Mvsrap1WXm+1ZhS5EkEDD6ZCm3Rdm5phycVsYdrtI71d1tSmXSWm2ZLQ7slBJs16kYLyuTWPqzji4W/Qn7X4N8tbsWjdtGpBPeNOKx7u8KJLPWkb+hT76Y4XeYwVB8nafhFA7PAwT8uj1/HAMbnKIdWEPEB67NjMQrBdtRtJi0UBVIalDoNrXvs9jKmMezrXPI+pJLlMmeMQ8rhks7KVgLbn6Lj0ep6AJqGCKCh6jhoJmHnHPRrG+FH3xCTZUcz2dFJ4AAy/kQTrowUuiJx0iZBIsUgjN0FLBPaZDWuvMwNk/9wMeUiXBpX+DqaHjDh4c98UuvX6XWmC2gMcFEAM9V53kuoDoIV4o9UGqO0z3XIoQcSEtr7XXYOYVPSSP5hA4pL7OPNzlG/ghw6rOR4aecwW9/wdW9rAyhLKAYZQBgMKKQh3hjoRyePodqgS1Oog7SPHKrAbluGKDFv06jDedTM4hAxQ9hBOKgZnomNPCvQGmsHZKHQxLaaydAo2ylVd0yPguVGxNDwYFbdM9lG0gQvUZ34Oy5eyh5P9CSQulByj9soEWyrYQoIaMD+QaR4yqAD4pnL4bpTP8QEfphw0+6OTZFsPk2QbbyRtzAjq8wwAIC94x+6uAOxAf9h/95+PbYWcB6J8+5YiOOZE+xkl5g/7YXeEN/rZOpn8BeWh0jYAHAAA=</data>
+        <length>996</length>
+        <position>1</position>
+        <sys_attachment display_value="logo" sys_id="0ac1fda2dba01010a16b5a75dc96195b">0ac1fda2dba01010a16b5a75dc96195b</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-06 06:22:56</sys_created_on>
+        <sys_id>cac1fda2dba01010a16b5a75dc96195b</sys_id>
+    </sys_attachment_doc>
+</record_update>

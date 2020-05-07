@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD1f59eb64162410108249cfc8e16d71a3</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>5f3e6e18dba01010e10c2efd0b96199a</scope_name>
+        <serialized_content>{"FlowDesigner:FD1f59eb64162410108249cfc8e16d71a3":{},"FlowDesigner:FD1f59eb64162410108249cfc8e16d71a3.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"c699fce2-02e7-4f0c-83e2-43753b685e55\",\"default_value\":\"\",\"label\":\"output\",\"mandatory\":\"false\",\"uiUniqueId\":\"663d1163-f5b5-4f0a-b1ae-67ef91294c30\",\"uiTypeLabel\":\"\",\"co_type_name\":\"FD1f59eb64162410108249cfc8e16d71a3\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"5be686b3-554a-449d-a133-7db1104c6010\",\"sourceType\":\"step\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"0\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-30 09:57:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>df59eb64db241010a16b5a75dc9619a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD1f59eb64162410108249cfc8e16d71a3</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Google Cloud Datastore Spoke" source="sn_gcp_cds_spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
+        <sys_update_name>sys_complex_object_df59eb64db241010a16b5a75dc9619a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-30 09:57:33</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

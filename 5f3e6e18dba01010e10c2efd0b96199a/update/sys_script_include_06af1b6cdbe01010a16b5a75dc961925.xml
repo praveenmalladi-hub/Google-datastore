@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>sn_gcp_cds_spoke.GoogleDatastoreUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>GoogleDatastoreUtils</name>
+        <script><![CDATA[var GoogleDatastoreUtils = Class.create();
+GoogleDatastoreUtils.prototype = {
+    initialize: function() {},
+
+	validateInputVariables: function(inputs, outputs) {
+        for (var key in inputs) {
+            var value = inputs[key];
+            if (typeof value == 'string')
+                inputs[key] = value.trim();
+            else
+                inputs[key] = value;
+        }
+        return inputs;
+    },
+
+	validateMandatoryVariables: function(obj, keys) {
+        keys.forEach(function(key) {
+            if (!obj[key])
+                throw new Error("Error while executing, mandatory information isn't passed in " + key);
+        });
+    },
+	
+	maptoOutputFromInput: function(inputs, outputs, keys) {
+        if (keys.length <= 0)
+            for (var key in inputs) {
+                outputs[key] = inputs[key];
+            } else {
+                keys.forEach(function(key) {
+                    outputs[key] = inputs[key];
+                });
+            }
+        return outputs;
+    },
+	
+    type: 'GoogleDatastoreUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-30 09:21:08</sys_created_on>
+        <sys_id>06af1b6cdbe01010a16b5a75dc961925</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GoogleDatastoreUtils</sys_name>
+        <sys_package display_value="Google Cloud Datastore Spoke" source="sn_gcp_cds_spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
+        <sys_update_name>sys_script_include_06af1b6cdbe01010a16b5a75dc961925</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-30 09:21:08</sys_updated_on>
+    </sys_script_include>
+</record_update>

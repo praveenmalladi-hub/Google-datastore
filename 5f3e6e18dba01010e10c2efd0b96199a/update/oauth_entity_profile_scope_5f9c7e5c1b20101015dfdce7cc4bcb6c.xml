@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile_scope">
+    <oauth_entity_profile_scope action="INSERT_OR_UPDATE">
+        <oauth_entity_profile display_value="Google Cloud Datastore default_profile">73f836981b20101015dfdce7cc4bcb23</oauth_entity_profile>
+        <oauth_entity_scope display_value="datastore">3409f2581b20101015dfdce7cc4bcb89</oauth_entity_scope>
+        <sys_class_name>oauth_entity_profile_scope</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-29 12:03:49</sys_created_on>
+        <sys_id>5f9c7e5c1b20101015dfdce7cc4bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>73f836981b20101015dfdce7cc4bcb23</sys_name>
+        <sys_package display_value="Google Cloud Datastore Spoke" source="sn_gcp_cds_spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Cloud Datastore Spoke">5f3e6e18dba01010e10c2efd0b96199a</sys_scope>
+        <sys_update_name>oauth_entity_profile_scope_5f9c7e5c1b20101015dfdce7cc4bcb6c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-29 12:03:49</sys_updated_on>
+    </oauth_entity_profile_scope>
+</record_update>
